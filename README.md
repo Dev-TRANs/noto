@@ -5,7 +5,7 @@
 ## LINKs
 - [Instagram](https://www.instagram.com/noto.studentsfund2024/)
 - [X](https://twitter.com/hukkobokinbystu)
-- [Email](hukko.boki.gakusei24@gmail.com)
+- [Email](mailto:hukko.boki.gakusei24@gmail.com)
 
 運営：[能登半島支援・学生支援募金本部](https://noto-support.vercel.app/)
 
