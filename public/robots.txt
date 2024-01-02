@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noto-support.vercel.app/sitemap-index.xml

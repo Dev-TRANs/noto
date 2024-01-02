@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.3.4",
     "@astrojs/preact": "^3.0.2",
+    "@astrojs/sitemap": "^3.0.4",
     "@astrojs/tailwind": "^5.1.0",
     "@tabler/icons-preact": "^2.45.0",
     "astro": "^4.0.8",
