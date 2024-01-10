@@ -9,14 +9,6 @@ import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
 ---
 
-<script>
-	import Swup from 'swup'
-	import SwupSlideTheme   from '@swup/slide-theme'
-	const swup = new Swup({
-		  plugins: [new SwupSlideTheme()]
-	});
-</script>
-
 <!doctype html>
 <html lang="en">
 	<head>
@@ -34,16 +26,9 @@ import Footer from "../components/Footer.astro"
 		<div class="sticky top-0 z-highest">
 			<Header />
 		  </div>
-		<main id="swup">
+		<main>
 			<slot />
 			<Footer />
 		</main>
-		<style>
-			body {
-  				--swup-slide-theme-translate: 60px;
-  				--swup-slide-theme-duration-fade: .3s;
-  				--swup-slide-theme-duration-slide: .4s;
-			}
-		</style>
 	</body>
 </html>
