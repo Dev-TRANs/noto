@@ -1,5 +1,12 @@
 ---
 import Page from "../layouts/Page.astro"
+import comments from "../assets/comments.json"
+
+interface Comment {
+    role: string;
+    lastName: string;
+    firstName: string;
+}
 ---
 <Page title="About | 能登半島地震・学生支援募金本部">
     <div class="mx-auto w-3/4 my-8">
@@ -12,7 +19,11 @@ import Page from "../layouts/Page.astro"
         <img class="mx-auto mt-4 w-full max-w-md" src="/img/Organization_Structure_Chart_Infographic_Graph.jpeg">
         <div class="text-3xl mt-8 text-center">メンバーについて</div>
         <div class="text-2xl mt-4 text-center">幹部</div>
-        <div class="text-xl mt-4 text-center">代表：中山智寛</div>
+        {
+            comments.map((comment: Comment) => {
+                return <div class="text-xl mt-4 text-center">{comment.role}：{comment.lastName}{comment.firstName}</div>
+            })
+        }
         <div class="text-2xl mt-4 text-center">メンバー分布</div>
         <img class="mx-auto mt-4 w-full max-w-md" src="/img/map.png">
         <div class="text-3xl mt-8 text-center">代表挨拶文</div>
