@@ -6,6 +6,6 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://noto-support.vercel.app',
+  site: 'https://noto.stki.org',
   integrations: [tailwind(), preact(), sitemap()]
 });
