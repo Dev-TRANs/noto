@@ -7,6 +7,6 @@
 - [X](https://twitter.com/hukkobokinbystu)
 - [Email](mailto:hukko.boki.gakusei24@gmail.com)
 
-運営：[能登半島支援・学生支援募金本部](https://noto-support.vercel.app/)
+運営：[能登半島支援・学生支援募金本部](https://noto.stki.org/)
 
-サイト制作：[TRANs](https://dev-trans.github.io/)
+サイト制作：[TRANs](https://trans.stki.org/)
