@@ -1,11 +1,11 @@
 ---
-interface Props {
+type Props =  {
     role: string;
     lastName: string;
     firstName: string;
-    image: string;
-    comment: string;
-}
+    image: (string | null);
+    comment: (string | null);
+};
 
 const { role, lastName, firstName, image, comment } = Astro.props;
 ---
