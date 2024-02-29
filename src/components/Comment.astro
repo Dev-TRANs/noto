@@ -20,11 +20,9 @@ const { role, lastName, firstName, image, comment } = Astro.props;
     </div>
     <div class="sm:col-span-3">
         {
-            return comment !== null
-                ? comment.split(/\\n/).map((line:string) => {
-                    return <div class="text-xl mt-4">{line}</div>
-                }) 
-                : <div />
+            comment !== null && comment.split(/\\n/).map((line:string) => {
+                return <div class="text-xl mt-4">{line}</div>
+            })
         }
     </div>
 </div>
