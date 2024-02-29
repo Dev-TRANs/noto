@@ -3,8 +3,8 @@ type Props =  {
     role: string;
     lastName: string;
     firstName: string;
-    image: (string | null);
-    comment: (string | null);
+    image: (string | undefined);
+    comment: (string | undefined);
 };
 
 const { role, lastName, firstName, image, comment } = Astro.props;
