@@ -22,6 +22,7 @@ type Comment = {
         {
             comments.map((comment: Comment) => {
                 return <div class="text-xl mt-4 text-center">{comment.role}：{comment.lastName}{comment.firstName}</div>
+            })
         }
         <div class="text-2xl mt-4 text-center">メンバー分布</div>
         <img class="mx-auto mt-4 w-full max-w-md" src="/img/map.png">
