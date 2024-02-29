@@ -3,13 +3,14 @@ import Page from "../layouts/Page.astro"
 import CommentBox from "../components/Comment.astro"
 import comments from "../assets/comments.json"
 
-interface Comment {
+type Comment =  {
     role: string;
     lastName: string;
     firstName: string;
-    image: string;
-    comment: string;
-}
+    image: (string | null);
+    comment: (string | null);
+};
+
 ---
 <Page title="幹部挨拶文">
     <div class="mx-auto w-3/4 my-10">
