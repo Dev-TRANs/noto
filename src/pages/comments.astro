@@ -7,8 +7,8 @@ type Comment =  {
     role: string;
     lastName: string;
     firstName: string;
-    image: (string | undefined);
-    comment: (string | undefined);
+    image?: string;
+    comment?: string;
 };
 
 ---
@@ -16,9 +16,11 @@ type Comment =  {
     <div class="mx-auto w-3/4 my-10">
         <div class="text-center text-4xl font-bold">幹部挨拶文</div>
     {
-        comments.map((comment: Comment) => {
-            return <CommentBox {...comment} />
-        })
+        comments
+            .filter((comment: Comment) => comment.image && comment.comment)
+            .map((comment: Comment) => {
+                return <CommentBox {...comment} />
+            })
     }
     </div>
 </Page>
