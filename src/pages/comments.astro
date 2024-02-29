@@ -20,6 +20,7 @@ type Comment =  {
             .filter((comment: Comment) => comment.image && comment.comment)
             .map((comment: Comment) => {
                 return <CommentBox {...comment} />
+                    <hr class="border border-gray-300 mt-8">
             })
     }
     </div>
