@@ -1,0 +1,16 @@
+---
+type Props =  {
+    thumbnail: string;
+    title: string;
+    link: string;
+    org: string;
+};
+
+const { thumbnail, title, link, org } = Astro.props;
+---
+<a href={link}>
+    <div class="">
+        <img src={`../img/media/${thumbnail}`} class="" />
+        <p class="text-lg sms:text-base md:text-lg mt-3"><span class="font-bold">{title}</span> - {org}</p>
+    </div>
+</a>
