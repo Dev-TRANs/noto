@@ -1,0 +1,24 @@
+---
+import Page from "../layouts/Page.astro"
+import MediaCard from "../components/MediaCard.astro"
+import media from "../assets/media.json"
+
+type Medium =  {
+    thumbnail: string;
+    title: string;
+    link: string;
+    org: string;
+};
+---
+<Page title="メディアへの掲載">
+    <div class="mx-auto w-3/4 my-10">
+        <div class="text-center text-4xl font-bold">メディアへの掲載</div>
+        <div class="grid grid-cols-1 sms:grid-cols-2 md:grid-cols-3 gap-7 mt-5">
+        {
+            media.map((medium: Medium) => {
+                return <MediaCard {...medium} />
+            })
+        }
+        </div>
+    </div>
+</Page>
