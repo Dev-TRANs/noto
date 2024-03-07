@@ -17,7 +17,7 @@ type Comment =  {
         <div class="text-center text-4xl font-bold">幹部挨拶文</div>
     {
         comments
-            .filter((comment: Comment) => comment.image && comment.comment)
+            .filter((comment: Comment) => comment.comment)
             .map((comment: Comment) => {
                 return <CommentBox {...comment} />
                     <hr class="border border-gray-300 mt-8">
