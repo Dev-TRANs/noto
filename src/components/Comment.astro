@@ -1,5 +1,6 @@
 ---
 type Props =  {
+    location?: string;
     role: string;
     lastName: string;
     firstName: string;
@@ -7,15 +8,23 @@ type Props =  {
     comment?: string;
 };
 
-const { role, lastName, firstName, image, comment } = Astro.props;
+const { location, role, lastName, firstName, image, comment } = Astro.props;
 ---
 
 <div class="mt-8 grid grid-cols-1 sm:grid-cols-4 gap-4 mx-auto">
     <div class="my-auto">
-        <img src={`/img/comments/${image}`} class="mx-auto max-w-32">
-        <div class="text-center text-3xl mt-6">
-            <p class="font-bold">{role}</p>
-            <p>{lastName}<wbr />{firstName}</p>
+        {
+            image !== undefined && <img src={`/img/comments/${image}`} class="mx-auto max-w-32 mb-6">
+        }
+        <div class="text-center text-3xl [&_span]:inline-block [&_span]:whitespace-nowrap">
+            <p class="font-bold">
+                <span>{location}</span>
+                <span>{role}</span>
+            </p>
+            <p>
+                <span>{lastName}</span>
+                <span>{firstName}</span>
+            </p>
         </div>
     </div>
     <div class="sm:col-span-3">

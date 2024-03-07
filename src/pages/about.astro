@@ -6,6 +6,7 @@ type Comment = {
     role: string;
     lastName: string;
     firstName: string;
+    onList: boolean;
 };
 ---
 <Page title="About">
@@ -20,9 +21,11 @@ type Comment = {
         <div class="text-3xl mt-8 text-center">メンバーについて</div>
         <div class="text-2xl mt-4 text-center">幹部</div>
         {
-            comments.map((comment: Comment) => {
-                return <div class="text-xl mt-4 text-center">{comment.role}：{comment.lastName}{comment.firstName}</div>
-            })
+            comments
+                .filter((comment: Comment) => comment.onList)
+                .map((comment: Comment) => {
+                    return <div class="text-xl mt-4 text-center">{comment.role}：{comment.lastName}{comment.firstName}</div>
+                })
         }
         <div class="text-2xl mt-4 text-center">メンバー分布</div>
         <img class="mx-auto mt-4 w-full max-w-md" src="/img/map.png">
