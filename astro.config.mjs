@@ -7,5 +7,11 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://noto.stki.org',
-  integrations: [tailwind(), preact(), sitemap()]
+  integrations: [tailwind(), preact(), sitemap()],
+  redirects: {
+      '/comments': {
+        status: 302,
+        destination: '/activity2023'
+      }
+  }
 });
