@@ -1,5 +1,10 @@
 ---
+type Props =  {
+    className?: string;
+};
+
+const { className } = Astro.props;
 ---
-<button class="bg-transparent text-violet-800 hover:bg-violet-800 hover:text-white transition border border-violet-800 rounded px-5 py-2 text-xl">
+<button class={`bg-transparent text-violet-800 hover:bg-violet-800 hover:text-white transition border border-violet-800 rounded px-5 py-2 text-xl ${className}`}>
     <slot />
 </button>
