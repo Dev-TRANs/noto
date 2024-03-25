@@ -1,5 +1,6 @@
 ---
 import Page from "../layouts/Page.astro"
+import BasicButton from "../components/BasicButton.astro"
 import {
   IconBrandInstagram,
   IconBrandX,
@@ -23,10 +24,10 @@ import {
 			<p class="text-xl">令和６年能登半島地震の被災地を支援するため生徒会活動や課外活動を行っている全国の学生を集めています！</p>
 			<div class="text-center mt-4">
 				<a href="/about">
-					<button class="bg-transparent text-violet-800 hover:bg-violet-800 hover:text-white transition border border-violet-800 rounded px-5 py-2 text-xl">About</button>
+					<BasicButton>About</BasicButton>
 				</a>
 				<a href="/media">
-					<button class="bg-transparent text-violet-800 hover:bg-violet-800 hover:text-white transition border border-violet-800 rounded px-5 py-2 text-xl ml-3">Media</button>
+					<BasicButton>Media</BasicButton>
 				</a>
 			</div>	
 			<hr class="bg-violet-900 border-0 h-px my-4">
