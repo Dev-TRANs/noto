@@ -1,0 +1,31 @@
+---
+import Page from "../layouts/Page.astro"
+import CommentBox from "../components/Comment.astro"
+import comments from "../assets/comments2024.json"
+
+type Comment =  {
+    role: string;
+    lastName: string;
+    firstName: string;
+    comment: string;
+};
+
+---
+<Page title="2024年度運営メンバー">
+    <div class="mx-auto w-3/4 my-10">
+        <div class="text-center text-4xl font-bold mb-8">2024年度運営メンバー</div>
+    {
+        comments
+            .map((comment: Comment) => {
+                return <div class="font-bold text-2xl [&_span]:inline-block [&_span]:whitespace-nowrap">
+                    <p>
+                        <span>{comment.role}</span>
+                        <span>{comment.lastName}</span>
+                        <span>{comment.firstName}</span>
+                    </p>
+                </div>
+                <div class="text-xl my-4">{comment.comment}</div>
+            })
+    }
+    </div>
+</Page>
