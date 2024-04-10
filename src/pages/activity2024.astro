@@ -20,12 +20,12 @@ type Comment =  {
             .map((comment: Comment) => {
                 return <div class="font-bold text-2xl [&_span]:inline-block [&_span]:whitespace-nowrap">
                     <p>
-                        <span>{role}</span>
-                        <span>{lastName}</span>
-                        <span>{firstName}</span>
+                        <span>{comment.role}</span>
+                        <span>{comment.lastName}</span>
+                        <span>{comment.firstName}</span>
                     </p>
                 </div>
-                <div class="text-xl my-4">{comment}</div>
+                <div class="text-xl my-4">{comment.comment}</div>
             })
     }
     </div>
