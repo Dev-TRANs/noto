@@ -1,13 +1,12 @@
 ---
 import Page from "../layouts/Page.astro"
-import comments from "../assets/comments.json"
+import comments from "../assets/comments2024.json"
 import BasicButton from "../components/BasicButton.astro"
 
 type Comment = {
     role: string;
     lastName: string;
     firstName: string;
-    onList: boolean;
 };
 ---
 <Page title="About">
@@ -23,7 +22,6 @@ type Comment = {
         <div class="text-2xl mt-4 text-center">幹部</div>
         {
             comments
-                .filter((comment: Comment) => comment.onList)
                 .map((comment: Comment) => {
                     return <div class="text-xl mt-4 text-center">{comment.role}：{comment.lastName}{comment.firstName}</div>
                 })
