@@ -2,6 +2,7 @@
 import Page from "../layouts/Page.astro"
 import comments from "../assets/comments2024.json"
 import BasicButton from "../components/BasicButton.astro"
+import Results from "../components/Results.astro"
 
 type Comment = {
     role: string;
@@ -55,6 +56,10 @@ type Comment = {
         <a href="https://www.boulmich.co.jp/fondateur/">
             <BasicButton className="mt-8 text-center w-full">吉田様のプロフィール</BasicButton>
         </a>
+        <div class="mx-auto w-3/4 my-10">
+            <div class="text-center text-3xl font-bold">今までの募金結果</div>
+            <Results />
+        </div>
         <div class="text-3xl mt-8 text-center">後援</div>
         <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
             <a href="https://steenz.jp">
