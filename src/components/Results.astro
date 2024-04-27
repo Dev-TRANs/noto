@@ -1,0 +1,23 @@
+---
+import { ofetch } from "ofetch";
+import { parse } from 'csv-parse/sync';
+
+type Row = string[]
+
+const csvData: Row[] = await ofetch<Row[]>(import.meta.env.CSV_URL!, {
+  parseResponse: (res: string) => {
+    return parse(res)
+  }
+});
+
+const imageUrl = csvData.map((row: Row) => row[0])
+
+---
+
+<div class="mt-4 grid grid-cols-3 gap-1">
+    {
+        imageUrl.map((url: string) => {
+                return <img src={url}>
+            })
+    }
+</div>

@@ -45,17 +45,5 @@ type Comment =  {
         <div class="text-center text-3xl font-bold">支部メンバー表</div>
         <img class="mx-auto mt-4 w-full max-w-md" src="/img/activity2023/shibu.png">
     </div>
-    <div class="mx-auto w-3/4 my-10">
-        <div class="text-center text-3xl font-bold">今までの募金結果</div>
-        <div class="mt-4 grid grid-cols-3 gap-1">
-        {
-            [...Array(7)]
-                .map((_, i) => String(i+1))
-                .map((num: string) => {
-                    return <img src={`/img/activity2023/bokin/${num}.jpg`}>
-                })
-        }
-        </div>
-    </div>
     <div class="mx-auto w-3/4 my-10 text-center text-gray-700 text-sm">名前の掲載を許可したメンバーのみ、掲載しております。</div>
 </Page>
