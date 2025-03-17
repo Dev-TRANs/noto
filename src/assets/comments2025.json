@@ -1,0 +1,44 @@
+[
+    {
+       "role": "代表",
+       "lastName": "田中",
+       "firstName": "希望",
+       "comment": ""
+    },
+    {
+       "role": "副代表",
+       "lastName": "久保",
+       "firstName": "壮太郎",
+       "comment": ""
+    },
+    {
+       "role": "副代表",
+       "lastName": "萬川",
+       "firstName": "誠吾",
+       "comment": ""
+    },
+    {
+       "role": "総務局",
+       "lastName": "関口",
+       "firstName": "俊",
+       "comment": ""
+    },
+    {
+       "role": "広報局",
+       "lastName": "角谷",
+       "firstName": "健吾",
+       "comment": ""
+    },
+    {
+       "role": "監査局",
+       "lastName": "山岸",
+       "firstName": "輪清",
+       "comment": ""
+    },
+    {
+       "role": "統括局",
+       "lastName": "井戸田",
+       "firstName": "晃介",
+       "comment": ""
+    }
+ ]
