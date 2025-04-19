@@ -1,5 +1,6 @@
 {
   "redirects": [
+    { "source": "/", "destination": "https://noto.stki.org", "permanent": true },
     { "source": "/:path", "destination": "https://noto.stki.org/:path", "permanent": true }
   ]
 }
