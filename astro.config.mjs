@@ -12,6 +12,10 @@ export default defineConfig({
       '/comments': {
         status: 302,
         destination: '/activity2023'
+      },
+      '/sitemap.xml': {
+        status: 302,
+        destination: '/sitemap-0.xml'
       }
   }
 });
