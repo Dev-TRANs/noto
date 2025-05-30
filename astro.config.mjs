@@ -15,7 +15,7 @@ export default defineConfig({
       },
       '/sitemap.xml': {
         status: 302,
-        destination: '/sitemap-0.xml'
+        destination: '/sitemap-index.xml'
       }
   }
 });
