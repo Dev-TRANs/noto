@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noto.stki.org/sitemap-index.xml
